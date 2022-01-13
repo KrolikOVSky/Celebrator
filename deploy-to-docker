@@ -1,0 +1,6 @@
+#!/bin/bash
+
+clear
+./gradlew clean build
+#docker rmi celebrator_app:latest
+docker-compose up -d --build

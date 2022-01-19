@@ -5,7 +5,6 @@ plugins {
 }
 
 group = 'ru.solarlab'
-//version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 repositories {
@@ -16,7 +15,7 @@ wrapper {
     gradleVersion = '7.3.2'
 }
 
-processResources{
+bootJar {
     exclude('application-*')
 }
 

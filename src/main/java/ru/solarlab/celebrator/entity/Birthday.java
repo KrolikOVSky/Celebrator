@@ -3,8 +3,6 @@ package ru.solarlab.celebrator.entity;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDate;
 import java.util.UUID;
@@ -21,6 +19,7 @@ public class Birthday {
     private String sex;
     private String role;
     private LocalDate date;
+    @Type(type = "text")
     private String image;
 
     protected Birthday() {

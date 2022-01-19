@@ -11,6 +11,8 @@ public class UpdateBirthdayModel {
     private String date;
     private String image;
 
+    public UpdateBirthdayModel(){}
+
     public UpdateBirthdayModel(String id, String name, String lastName, String midName, String sex, String role, String date, String image) {
         this.id = id;
         this.name = name;

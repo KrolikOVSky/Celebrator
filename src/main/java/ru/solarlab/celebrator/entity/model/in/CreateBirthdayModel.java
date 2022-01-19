@@ -10,6 +10,8 @@ public class CreateBirthdayModel {
     private String date;
     private String image;
 
+    public CreateBirthdayModel(){}
+
     public CreateBirthdayModel(String name, String lastName, String midName, String sex, String role, String date, String image) {
         this.name = name;
         this.lastName = lastName;

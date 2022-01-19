@@ -44,7 +44,7 @@ public class CelebrateService {
         Comparator<Celebrate> comp = Comparator.comparing(Celebrate::getMark).thenComparing(Celebrate::getMonth).thenComparing(Celebrate::getDay);
         celebrates.sort(comp);
 
-        while (celebrates.size() != nextCount) {
+        while (celebrates.size() > nextCount) {
             celebrates.remove(celebrates.size() - 1);
         }
 

@@ -35,7 +35,7 @@ public class BirthdayController {
     }
 
     @DeleteMapping
-    public void delete(@RequestBody Map<String, Object> body){
+    public void delete(@RequestParam Map<String, Object> body) {
         System.out.println(body.get("id"));
         birthdayService.delete(body.get("id").toString());
     }
